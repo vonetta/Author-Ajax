@@ -64,6 +64,17 @@
         <hr />
         <div class="ui segment container">
             <div class="ui cards author-list">
+                <div class="card author">
+                    <button class="ui icon button deleteBtn">
+                        <i class="delete icon"></i>
+                    </button>
+                    <div class="content">
+                        <h1 class="header">John Smith</h1>
+                        <p class="meta">36</p>
+                        <p class="description">$<strong>90000</strong></p>
+
+                    </div>
+                </div>
             </div>
         </div>
         <div class="ui inverted vertical footer segment">
@@ -98,7 +109,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
     <script type="text/html" id="template">
-        <div class="card">
+        <div class="card author">
+            <button class="ui icon button deleteBtn">
+                <i class="delete icon"></i>
+            </button>
             <div class="content">
                 <h1 class="header">John Smith</h1>
                 <p class="meta">36</p>
