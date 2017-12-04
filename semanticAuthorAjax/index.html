@@ -15,7 +15,6 @@
             <a class="item">
                 Blog
             </a>
-
             <div class="right menu">
                 <div class="item">
                     <div class="ui transparent icon input">
@@ -29,37 +28,33 @@
             <p></p>
             <form class="ui form">
                 <h4 class="ui dividing header">Author Information</h4>
-
                 <div class="field">
                     <label>First Name</label>
-                    <input type="text" name="author[first-name]" placeholder="First Name">
+                    <input type="text" name="author[first-name]" placeholder="First Name" id="fName">
                 </div>
-
                 <div class="field">
                     <label>Last Name</label>
-                    <input type="text" name="author[last-name]" placeholder="Last Name">
+                    <input type="text" name="author[last-name]" placeholder="Last Name" id="lName">
                 </div>
-
                 <div class="field">
                     <label>Age</label>
-                    <input type="text" name="author[age]" placeholder="Age">
+                    <input type="text" name="author[age]" placeholder="Age" id="age">
                 </div>
-
                 <div class="field">
                     <label>Salary</label>
-                    <select class="ui dropdown">
+                    <select class="ui dropdown" id="salary">
                         <option value="">Please Select</option>
-                        <option value="0">$50,000</option>
-                        <option value="1">$55,000</option>
-                        <option value="2">$60,000</option>
-                        <option value="3">$65,000</option>
-                        <option value="4">$70,000</option>
-                        <option value="5">$75,000</option>
-                        <option value="6">$80,000</option>
-                        <option value="7">$85,000</option>
-                        <option value="8">$90,000</option>
-                        <option value="9">$95,000</option>
-                        <option value="10">$100,000</option>
+                        <option value="50000">$50,000</option>
+                        <option value="55000">$55,000</option>
+                        <option value="60000">$60,000</option>
+                        <option value="65000">$65,000</option>
+                        <option value="70000">$70,000</option>
+                        <option value="75000">$75,000</option>
+                        <option value="80000">$80,000</option>
+                        <option value="85000">$85,000</option>
+                        <option value="90000">$90,000</option>
+                        <option value="95000">$95,000</option>
+                        <option value="100000">$100,000</option>
                     </select>
                 </div>
                 <div class="ui button btnSubmit" tabindex="0">Add Author</div>
@@ -69,31 +64,8 @@
         <hr />
         <div class="ui segment container">
             <div class="ui cards author-list">
-                <div class="card">
-                    <div class="content">
-                        <h1 class="header">John Smith</h1>
-                        <p class="meta">36</p>
-                        <p class="description">$<strong>90000</strong></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <h1 class="header">John Smith</h1>
-                        <p class="meta">36</p>
-                        <p class="description">$<strong>90000</strong></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <h1 class="header">John Smith</h1>
-                        <p class="meta">36</p>
-                        <p class="description">$<strong>90000</strong></p>
-                    </div>
-                </div>
             </div>
-
         </div>
-
         <div class="ui inverted vertical footer segment">
             <div class="ui container ">
                 <div class="ui stackable inverted divided equal height stackable grid">
@@ -122,10 +94,19 @@
                 </div>
             </div>
         </div>
-
     </div> <!--end of container-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
-    <script src="main.js"></script>
+    <script type="text/html" id="template">
+        <div class="card">
+            <div class="content">
+                <h1 class="header">John Smith</h1>
+                <p class="meta">36</p>
+                <p class="description">$<strong>90000</strong></p>
+
+            </div>
+        </div>
+    </script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
